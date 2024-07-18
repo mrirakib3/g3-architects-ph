@@ -12,7 +12,16 @@
   padding: 0;
 }
 
-/* text-color */
+main {
+  max-width: 1012px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+/* shared styles */
 .dark01 {
   color: #131313;
 }
@@ -25,7 +34,6 @@
   color: #727272;
 }
 
-/* shared styles */
 .display-flex {
   display: flex;
 }
@@ -38,7 +46,7 @@
   color: #424242;
 }
 
-.dark02 {
+.dark03 {
   color: #727272;
 }
 
@@ -74,7 +82,7 @@
 
 .nav-item {
   list-style: none;
-  margin-right: 30px; 
+  margin-left: 30px; 
 }
 
 .nav-link {
@@ -111,15 +119,139 @@ header {
   padding-bottom: 32px;
 }
 
+/* team and features style */
+.teams {
+  align-items: center;
+  max-width: 926px;
+  margin: 0 auto;
+  margin-top: 60px;
+  gap: 50px;
+}
+
+.team-img-containner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#feature-title-part2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#feature-title-part3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FF900E;
+}
+
+.feature-description {
+  margin: 18px 0 24px 0;
+}
+
+/* experience style */
+.experience-container {
+  gap: 100px;
+  margin-top: 90px;
+}
+
+.experience-text-info {
+  margin: auto 0;
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: 700;
+  border-left: 4px solid #FF900E;
+  padding-left: 15px;
+}
+
+.experience-description {
+  font-size: 0.7rem;
+  margin: 17px 0 25px 0;
+}
+
+.experience-box {
+  padding: 21px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.experience-box-title {
+  font-size: 0.87rem;
+}
+
+.experience-box-description {
+  font-size: 0.7rem;
+}
+
+.experience-img {
+  max-width: 100%;
+}
+
+#ten-year {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#exp {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#ten-year-btn {
+  line-height: 30px;
+  padding: 25px 30px 20px 30px;
+  margin-top: -120px;
+  margin-left: -60px;
+}
+
+
+
 /* small screen responsive */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links {
+  body {
+    padding: 0 15px;
+  }
+  
+  .navbar, 
+  .nav-links, 
+  .teams,
+  .experience-container {
     flex-direction: column;
+  }
+
+  .navbar, 
+  .nav-links {
     text-align: center;
   }
 
   .nav-item {
     margin: 10px 0 0 0;
   }
+
+  .team-img-containner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature {
+    margin-left: 20px;
+  }
+
+  .experience-container {
+    gap: 30px;
+  }
+
+  #ten-year-btn {
+    margin: 0 auto;
+    margin-top: -60px;
+  }
+  
 
 }
