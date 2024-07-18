@@ -6,3 +6,120 @@
   font-weight: 400;
   font-style: normal;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* text-color */
+.dark01 {
+  color: #131313;
+}
+
+.dark02 {
+  color: #424242;
+}
+
+.dark03 {
+  color: #727272;
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+.dark01 {
+  color: #131313;
+}
+
+.dark02 {
+  color: #424242;
+}
+
+.dark02 {
+  color: #727272;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-align {
+  text-align: center;
+}
+
+.btn-primary {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: white;
+  background: #FF900E;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* header styles */
+
+/* nav styles */
+.brand {
+  font-weight: 700;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px; 
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar, .banner {
+  max-width: 1012px;
+  margin: 0 auto;
+}
+
+/* banner-styles */
+.banner-title {
+  font-size: 2.8rem;
+}
+
+.banner-description {
+  font-size: 0.7rem;
+  margin: 18px 0 22px 0;
+}
+
+.banner-content {
+  max-width: 605px;
+  margin: 0 auto;
+  padding: 81px 0 22px 0;
+}
+
+.banner-img {
+  max-width: 100%;
+}
+
+header {
+  padding-bottom: 32px;
+}
+
+/* small screen responsive */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0 0 0;
+  }
+
+}
